@@ -15,3 +15,12 @@ dotnet run
 ```
 
 this will generate an `output.dxf` you can print preview using [qcad](https://www.qcad.org/en/download)
+
+## how this project was built
+
+```sh
+dotnet new console -n resistor-bag-labels
+cd resistor-bag-labels
+dotnet add package netDxf.netstandard --version 2.4.0
+code .
+```
