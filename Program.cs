@@ -43,7 +43,10 @@ namespace resistor_bag_labels
 
             var rValues3 = new List<double>()
             {
-                5.6e3, 300e3
+                1.2, 1.5, 1.8, 2.7, 3.3, 3.9, 6.8, 12, 18, 560, 820,
+                1.2e3, 1.8e3, 2.7e3, 12e3, 18e3, 27e3, 270e3, 380e3,
+                5.6e3, 300e3,
+                1.2e6, 1.8e6, 2.2e6, 2.7e6, 3.9e6, 6.8e6, 8.2e6
             };
 
             var DATA = rValues1.Union(rValues2).Union(rValues3).OrderBy(w => w).ToList();
@@ -54,7 +57,7 @@ namespace resistor_bag_labels
             var LABEL_W = 25d;
             var LABEL_H = 20d;
 
-            var MARGINS_LTRB = new[] { 5d, 10d, 5d, 5d };
+            var MARGINS_LTRB = new[] { 10d, 10d, 10d, 10d };
 
             var COLS = Math.Truncate((PAGE_W - MARGINS_LTRB[0] - MARGINS_LTRB[2]) / LABEL_W);
             var ROWS = Math.Truncate((PAGE_H - MARGINS_LTRB[1] - MARGINS_LTRB[3]) / LABEL_H);

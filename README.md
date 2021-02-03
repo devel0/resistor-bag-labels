@@ -14,7 +14,7 @@ cd resistor-bag-labels
 dotnet run
 ```
 
-this will generate an `output.dxf` you can print preview using [qcad](https://www.qcad.org/en/download)
+this will generate an [output.dxf](output.dxf) you can print preview using [qcad](https://www.qcad.org/en/download) ( sample: [output.pdf](output.pdf) )
 
 ## how this project was built
 
